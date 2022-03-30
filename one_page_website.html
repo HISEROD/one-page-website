@@ -4,6 +4,7 @@
         <title>Space is pretty cool.</title>
         <meta lang="en">
 		<link rel="stylesheet" type="text/css" href="./css/one_page_website.css">
+		<script src="js/main.js" defer></script>
     </head>
     <body>
         <header>
@@ -30,116 +31,76 @@
             <section>
                 <h1>About</h1>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum unde expedita iure assumenda, labore beatae repellat<br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum unde expedita iure assumenda, labore beatae repellat
                     tempore nam numquam. Rem debitis facilis reiciendis sed cumque culpa animi quasi pariatur temporibus?
                 </p>
             </section>
 
             <!-- GALLERY -->
             <section id="gallery">
-                <!-- I'm just reusing the images from the space station website code here. -->
                 <h1>Gallery</h1>
-				<div>
+				<div id="image-grid">
+					<div onclick="showImage(event, 0)"> <!-- PHOTO 1 -->
+						<img src="images/thumb/thumb1.jpg" alt="awesome outer space image">
+					</div>
+					<div onclick="showImage(event, 1)"> <!-- PHOTO 2 -->
+						<img src="images/thumb/thumb2.jpg" alt="awesome outer space image">
+					</div>
+					<div onclick="showImage(event, 2)"> <!-- PHOTO 3 -->
+						<img src="images/thumb/thumb3.jpg" alt="awesome outer space image">
+					</div>
+					<div onclick="showImage(event, 3)"> <!-- PHOTO 4 -->
+						<img src="images/thumb/thumb4.jpg" alt="awesome outer space image">
+					</div>
+					<div onclick="showImage(event, 4)"> <!-- PHOTO 5 -->
+						<img src="images/thumb/thumb5.jpg" alt="awesome outer space image">
+					</div>
+					<div onclick="showImage(event, 5)"> <!-- PHOTO 6 -->
+						<img src="images/thumb/thumb6.jpg" alt="awesome outer space image">
+					</div>
+					<div onclick="showImage(event, 6)"> <!-- PHOTO 7 -->
+						<img src="images/thumb/thumb7.jpg" alt="awesome outer space image">
+					</div>
+					<div onclick="showImage(event, 7)"> <!-- PHOTO 8 -->
+						<img src="images/thumb/thumb8.jpg" alt="awesome outer space image">
+					</div>
+					<div onclick="showImage(event, 8)"> <!-- PHOTO 9 -->
+						<img src="images/thumb/thumb9.jpg" alt="awesome outer space image">
+					</div>
+				</div>
 
-					<!-- PHOTO-CONTAINER 1 -->
-					<div>
-						<div>
+				<!-- IMAGE MODAL -->
+				<div id="image-modal-container" onclick="closeModal()">
+					<img id="current-image" src="" alt="">
+					<div id="image-tray">
+						<div onclick="showImage(event, 0)"> <!-- PHOTO 1 -->
 							<img src="images/thumb/thumb1.jpg" alt="awesome outer space image">
-							<div>
-								<h3>Click to Enlarge</h3>
-							</div>
 						</div>
-					</div>
-					<!-- END PHOTO-CONTAINER 1 -->
-
-					<!-- PHOTO-CONTAINER 2 -->
-					<div>
-						<div>
+						<div onclick="showImage(event, 1)"> <!-- PHOTO 2 -->
 							<img src="images/thumb/thumb2.jpg" alt="awesome outer space image">
-							<div>
-								<h3>Click to Enlarge</h3>
-							</div>
 						</div>
-					</div>
-					<!-- END PHOTO-CONTAINER 2 -->
-
-					<!-- PHOTO-CONTAINER 3 -->
-					<div>
-						<div>
+						<div onclick="showImage(event, 2)"> <!-- PHOTO 3 -->
 							<img src="images/thumb/thumb3.jpg" alt="awesome outer space image">
-							<div>
-								<h3>Click to Enlarge</h3>
-							</div>
 						</div>
-					</div>
-					<!-- END PHOTO-CONTAINER 3 -->
-
-					<!-- PHOTO-CONTAINER 4 -->
-					<div>
-						<div>
+						<div onclick="showImage(event, 3)"> <!-- PHOTO 4 -->
 							<img src="images/thumb/thumb4.jpg" alt="awesome outer space image">
-							<div>
-								<h3>Click to Enlarge</h3>
-							</div>
 						</div>
-					</div>
-					<!-- END PHOTO-CONTAINER 4 -->
-
-					<!-- PHOTO-CONTAINER 5 -->
-					<div>
-						<div>
+						<div onclick="showImage(event, 4)"> <!-- PHOTO 5 -->
 							<img src="images/thumb/thumb5.jpg" alt="awesome outer space image">
-							<div>
-								<h3>Click to Enlarge</h3>
-							</div>
 						</div>
-					</div>
-					<!-- END PHOTO-CONTAINER 5 -->
-
-					<!-- PHOTO-CONTAINER 6 -->
-					<div>
-						<div>
-							<img src="images/thumb/thumb6.jpg" alt="awesome outer space image" width="512">
-							<div>
-								<h3>Click to Enlarge</h3>
-							</div>
+						<div onclick="showImage(event, 5)"> <!-- PHOTO 6 -->
+							<img src="images/thumb/thumb6.jpg" alt="awesome outer space image">
 						</div>
-					</div>
-					<!-- END PHOTO-CONTAINER 6 -->
-
-					<!-- PHOTO-CONTAINER 7 -->
-					<div>
-						<div>
+						<div onclick="showImage(event, 6)"> <!-- PHOTO 7 -->
 							<img src="images/thumb/thumb7.jpg" alt="awesome outer space image">
-							<div>
-								<h3>Click to Enlarge</h3>
-							</div>
 						</div>
-					</div>
-					<!-- END PHOTO-CONTAINER 7 -->
-
-					<!-- PHOTO-CONTAINER 8 -->
-					<div>
-						<div>
+						<div onclick="showImage(event, 7)"> <!-- PHOTO 8 -->
 							<img src="images/thumb/thumb8.jpg" alt="awesome outer space image">
-							<div>
-								<h3>Click to Enlarge</h3>
-							</div>
 						</div>
-					</div>
-					<!-- END PHOTO-CONTAINER 8 -->
-
-					<!-- PHOTO-CONTAINER 9 -->
-					<div>
-						<div>
+						<div onclick="showImage(event, 8)"> <!-- PHOTO 9 -->
 							<img src="images/thumb/thumb9.jpg" alt="awesome outer space image">
-							<div>
-								<h3>Click to Enlarge</h3>
-							</div>
 						</div>
 					</div>
-					<!-- END PHOTO-CONTAINER 9 -->
-
 				</div>
 		    </section>
 
