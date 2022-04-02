@@ -17,12 +17,16 @@
 
         <!-- LOGIN FORM -->
         <section>
-            <h1>Log In</h1>
-            <form>
-                <input type="email" name="email" placeholder="Email">
-                <input type="password" name="password" placeholder="Password">
-                <input type="submit" name="Submit">
-            </form>
+			<button class="open-button" onclick="openForm()">Open</button>
+			<div id="login" class="form-popup">
+				<form class="form-container">
+					<h1>Log In</h1>
+					<input type="email" name="email" placeholder="Email">
+					<input type="password" name="password" placeholder="Password">
+					<button type="submit" class="btn">Login</button>
+					<button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+				</form>
+			</div>
         </section>
 
         <main>

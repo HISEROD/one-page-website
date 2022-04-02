@@ -1,3 +1,13 @@
+// -------- POPUP FORM --------
+function openForm() {
+    document.getElementById("login").style.display = "block";
+}
+
+function closeForm() {
+    document.getElementById("login").style.display = "none";
+}
+
+// -------- GALLERY --------
 function openModal() {
     // show image modal
     document.getElementById("image-modal-container").style.visibility = "visible";
