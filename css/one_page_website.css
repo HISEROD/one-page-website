@@ -2,6 +2,7 @@ html {
     background-color: #222;
     font: 1em Sans-Serif;
     color: #ccc;
+    scroll-behavior: smooth;
 }
 
 input {
@@ -50,11 +51,6 @@ input {
     margin: 5px 0 22px 0;
     border: none;
     background: #eee;
-}
-
-.form-container input[type=text]:focus, .form-container input[type=password]:focus {
-    background-color: #ddd;
-    outline: none;
 }
 
 .form-container .btn {
